@@ -1,0 +1,37 @@
+.scanner {
+  margin-bottom: 3px;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: 2px solid black;
+}
+
+.scanner-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scanner-symbol {
+  flex: 10;
+}
+
+.scanner-value {
+  flex: 10;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.scanner-delete {
+  flex: 1;
+  text-align: right;
+  cursor: pointer;
+  background: #ee1111;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.tripped {
+  background-color: rgba(100, 255, 100, 0.5);
+}

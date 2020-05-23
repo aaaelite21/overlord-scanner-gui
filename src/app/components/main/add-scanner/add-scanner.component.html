@@ -1,0 +1,14 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <select [(ngModel)]="name" type="text" name="label" placeholder="Add Scanner..." class="names">
+    <option value="" disabled selected>Add Scanner...</option>
+    <option *ngFor="let label of labels" [value]="label">
+      {{label}}
+    </option>
+  </select>
+  <select [(ngModel)]="pair" type="text" name="pair" class="pairs">
+    <option *ngFor="let pair of pairs" [value]="pair">
+      {{pair}}
+    </option>
+  </select>
+  <input type="submit" value="Submit" class="btn">
+</form>

@@ -1,0 +1,8 @@
+<div class="scanner" [ngClass]="{'tripped' : this.scanner.tripped}">
+  <h3>{{this.scanner.label}}</h3>
+  <div class="scanner-data">
+    <div class="scanner-symbol">{{this.scanner.symbol}}</div>
+    <div class="scanner-value">{{this.scanner.value}}</div>
+    <div class="scanner-delete" (click)="onDeleteClick()">x</div>
+  </div>
+</div>

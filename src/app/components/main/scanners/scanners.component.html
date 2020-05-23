@@ -1,0 +1,9 @@
+<div class="ticker-bar">
+  <app-price-item *ngFor="let price of prices" [price]="price">
+  </app-price-item>
+</div>
+<app-add-scanner [pairs]="pairsList" [labels]="scannerList" (addScanner)="addScanner($event)"></app-add-scanner>
+<div class="scanner-list">
+  <app-scanner-item *ngFor="let scanner of scanners" [scanner]="scanner" (deleteScanner)="deleteScanner($event)">
+  </app-scanner-item>
+</div>

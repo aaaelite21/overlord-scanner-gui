@@ -1,0 +1,14 @@
+.scanner-list {
+  padding: 10px;
+  border: 1px solid black;
+  max-width: 500px;
+  margin: 5px auto 0 auto;
+  border-radius: 10px;
+}
+
+.ticker-bar {
+  width: 100%;
+  min-height: 2em;
+  background: #efefef;
+  display: flex;
+}
